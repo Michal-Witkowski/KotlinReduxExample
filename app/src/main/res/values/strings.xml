@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AuctionMaker</string>
+    <string name="auction_title">Tytuł</string>
+    <string name="auction_category">Kategoria</string>
+    <string name="auction_category_hint">Wpisz tytuł aby pobrać listę kategorii</string>
+    <string name="auction_description">Opis</string>
+    <string name="submit">Wystaw</string>
+    <string name="error_message">Wystąpił błąd</string>
+    <string name="error_retry">Spróbuj ponownie</string>
+</resources>
