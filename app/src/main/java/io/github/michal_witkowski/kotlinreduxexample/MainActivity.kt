@@ -12,12 +12,15 @@ import com.jakewharton.rxbinding2.view.RxView
 import com.jakewharton.rxbinding2.widget.RxTextView
 import io.github.michal_witkowski.kotlinreduxexample.State.Categories
 import io.github.michal_witkowski.kotlinreduxexample.category.ChooseCategoryAction
+import io.github.michal_witkowski.kotlinreduxexample.common.ClearFormAction
+import io.github.michal_witkowski.kotlinreduxexample.common.DismissErrorAction
 import io.github.michal_witkowski.kotlinreduxexample.submit.SubmitRequestAction
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.concurrent.TimeUnit
-import android.content.DialogInterface
+import io.github.michal_witkowski.kotlinreduxexample.fields.DescriptionChangeAction
+import io.github.michal_witkowski.kotlinreduxexample.fields.TitleChangeAction
 
 
 class MainActivity : AppCompatActivity() {
