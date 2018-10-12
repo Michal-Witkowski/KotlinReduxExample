@@ -13,7 +13,6 @@ class CategoryLoaderMiddleware : Middleware<State> {
                 .filter { state -> state.categories is WaitingToLoad}
                 .distinct { state -> (state.categories as WaitingToLoad).requestId}
                 .switchMap<Action<State>> { state ->
-                    //TODO zerowanie przy pustym tytule
                     CategoryEndpoint
                             .getCategories(state.title)
                             .map<Action<State>> { categories -> CategoriesLoadedAction(categories) }
